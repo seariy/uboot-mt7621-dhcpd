@@ -31,7 +31,7 @@ on:
         description: 'GPIO Config (format: reset_pin,sysled_pin)'
         required: true
         type: string
-        default: '18,3'
+        default: '18,23'
       cpufreq:
         description: 'CPU Frequency (400 - 1200)'
         required: true
