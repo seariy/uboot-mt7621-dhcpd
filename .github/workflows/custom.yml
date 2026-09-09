@@ -7,7 +7,7 @@ on:
         description: 'Device Model'
         required: true
         type: string
-        default: 'ZTE_E8820S'
+        default: 'WIA3300-10'
       flash:
         description: 'Flash Type'
         required: true
@@ -16,17 +16,17 @@ on:
         - 'NAND'
         - 'NAND-NMBM'
         - 'NOR'
-        default: 'NAND'
+        default: 'NOR'
       mtdparts:
         description: 'MTD Partitions'
         required: true
         type: string
-        default: '512k(u-boot),512k(u-boot-env),256k(factory),-(firmware)'
+        default: '192k(u-boot),64k(u-boot-env),64k(factory),-(firmware)'
       kernel_offset:
         description: 'Kernel Load Address'
         required: true
         type: string
-        default: '0x140000'
+        default: '0x50000'
       gpio_config:
         description: 'GPIO Config (format: reset_pin,sysled_pin)'
         required: true
